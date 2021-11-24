@@ -1,0 +1,58 @@
+.list-group-item a {
+    text-decoration: none;
+    color: grey;
+}
+.list-group-item a:hover {
+    color: rgb(0, 38, 255);
+}
+
+/* filter Prodcut by Price*/
+.slider-range {
+    -webkit-appearance: none;
+    width: 240px;
+    height: 10px;
+    background: linear-gradient(
+        90deg,
+        rgb(255, 255, 255) 60%,
+        rgb(255, 255, 255) 60%
+    );
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    border-radius: 12px;
+    box-shadow: 0px 1px 10px 1px black;
+}
+
+.slider-range::after {
+    content: "100";
+    color: rgb(41, 41, 41);
+    font-size: 20px;
+    position: absolute;
+    left: 85%;
+    margin-top: 10px;
+}
+.slider-range::before {
+    content: "0";
+    color: rgb(41, 41, 41);
+    font-size: 20px;
+    position: absolute;
+    margin-top: 10px;
+}
+.slider-range:hover {
+    opacity: 1;
+}
+.slider-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background: rgb(247, 226, 248);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider-range::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    background: rgb(247, 226, 248);
+    border-radius: 50%;
+    cursor: pointer;
+}
